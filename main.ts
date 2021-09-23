@@ -1,1 +1,16 @@
-
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    music.playTone(220, music.beat(BeatFraction.Half))
+    music.playTone(196, music.beat(BeatFraction.Half))
+    music.playTone(220, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Half))
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    music.playTone(175, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(139, music.beat(BeatFraction.Whole))
+    music.rest(music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Double))
+})
+music.setTempo(160)
+music.setVolume(255)
+game.showLongText("Press the A button (or the Z key) to hear an eerie tune.", DialogLayout.Center)
